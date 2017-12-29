@@ -19,8 +19,7 @@ public class GenericFormatter extends Formatter {
         Date date = new Date();
         SimpleDateFormat sdf = new SimpleDateFormat("MM/dd HH:mm:ss:SSS"); //ex. 11/25 22:03:59:010
 
-        sb.append(String.format("[%s] [%s] %s", sdf.format(date), record.getLevel(), record.getMessage()));
-        sb.append('\n');
+        sb.append(String.format("[%s] [%s] %s\n", sdf.format(date), record.getLevel(), record.getMessage()));
 
 
         return sb.toString();
